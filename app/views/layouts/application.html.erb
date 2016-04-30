@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>Ozark Oak and Steel</title>
+  	
+  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Ozark Oak and Steel Fine Handcrafted Furniture" />
+	
+		<!-- Pinterest verify -->
+		<meta name="p:domain_verify" content="a6c2adcef0ca9e0acc9fa6061d9f921b"/>
+		
+		<%= auto_discovery_link_tag :atom, "/feed" %>
+	
+		<%= stylesheet_link_tag "application", media: "all" %>
+		<%= javascript_include_tag "modernizr" %>
+		<%= favicon_link_tag "favicon.ico" %>
+		
+	</head>
+	
+	<body>
+		
+		<!-- Load mask -->
+		<div class="mask">
+  			<div id="loader"></div>
+		</div>
+		
+		<div class="main-wrapper">
+		
+			<!-- Navigation header -->
+			<header id="navigation">
+				<div class="row">
+					<div class="large-9 small-6 medium-4 columns logo-wrapper">
+						<% if params[:id] %><a href="/"><% end %>
+							<%= image_tag "OOS_logo_small.png", id: "main-logo", alt: "Ozark Oak and Steel Fine Handcrafted Furniture" %>
+						<% if params[:id] %></a><% end %>
+					</div>
+					<div id="top-right" class="large-3 small-6 medium-4 columns">
+						<div id="top-right-wrapped">
+							<% if params[:id] %><a class="small-link" href="/"><% end %>
+								<h1>Ozark Oak and Steel</h1>
+							<% if params[:id] %></a><% end %>
+							<ul class="social-team">
+				  				<li><a title="" href="http://www.pinterest.com/ozarkoaksteel/" target="_blank"><i class="fa fa-pinterest fa-lg fa-la-left"></i></a></li>
+				  				<li><a title="" href="https://www.facebook.com/ozarkoakandsteel" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+			      				<li><a title="" href="http://www.instagram.com/ozarkoakandsteel" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+			      				<li><a title="" href="https://www.twitter.com/ozarkoaksteel" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+			      				<li><a title="" href="http://www.youtube.com/ozarkoakandsteel" target="_blank"><i class="fa fa-youtube-play fa-lg no-right"></i></a></li>
+			    			</ul>
+							<a href="tel: (479) 295-0368"><h3 class="call-now">Call now to order: (479) 295-0368</h3></a>
+						</div>
+					</div>
+				</div>
+			</header>
+	
+			<%= yield %>
+
+			<div class="push"></div>
+		</div>
+		
+		<!-- Footer -->
+		<section class="footer-section">
+			<div align="center">
+				<h6 class="bottom-h6">
+					<a id="button-about" class="jackbox" data-group="about-us" href="#about-us">About Us</a> - 
+					<a id="button-terms" class="jackbox" data-group="how-to-order" href="#how-to-order">How To Order</a>
+				<h6>
+				<span class="border" id="bottom-border"></span>
+				<h6 class="bottom-h6-2">
+					Content &copy; 
+					
+					2014 
+					<% if Time.now.year > 2014 %>
+						- <%= Time.now.year %>
+					<% end %> 
+					
+					Ozark Oak and Steel. 
+				</h6>
+	    	</div>
+		</section>
+ 		
+ 		<!-- About -->
+		<div class="jackbox-html" id="about-us">
+			<div class="text-div">
+				<p>
+				<span style="color:black">Ozark Oak and Steel</span> was created to produce thoughtful furniture that 
+				will last a lifetime, <span style="color:black">conscious</span> of indelible design melding 
+				<span style="color:black">contemporary </span> metal forms with classic hardwood forms.  Even the name 
+				speaks to the intent of a product that is sleek and modern, yet <span style="color:black">approachable</span> 
+				and <span style="color:black">handcrafted</span>.
+				</p>
+				<p>
+				<span style="color:black">Think of it this way:</span> The woodcraft is an expression of natural beauty, 
+				between the <span style="color:black">timeless elegance</span> of Mission and the contemporary 
+				<span style="color:black">expressiveness</span> of Nakashima.  The steelcraft is at once the rigor 
+				of modern mechanical structure and the <span style="color:black">organic</span> form of an Emeco 1006.  It is the 
+				<span style="color:black">austerity</span> of Eames and the intellectualism of Alexander; the 
+				<span style="color:black">strident</span> geometry of Le Corbusier and the 
+				<span style="color:black">seemless</span> integration of late Wright.  
+				</p>
+				<p>
+				<span style="color:black">Why do we do it?</span> It is a passion, a love.  It trains the 
+				<span style="color:black">mind</span> and <span style="color:black">eye</span> to 
+				<span style="color:black">see</span>. It makes something <span style="color:black">beautiful</span> that can be shared, 
+				<span style="color:black">appreciated</span> and enjoyed for a lifetime.  And what's more <span style="color:black">we know 
+				our stuff</span> inside and out, and want to <span style="color:black">share</span> it with you.
+				</p>
+				<p>
+				<span style="color:black">Why</span> do you want something that is not well thought out, ignorant of its 
+				history, not knowing of its fundamental design principals? These things are just objects taking up space.  
+				<span style="color:black">Why</span> would you want something made in anonymity rather than something 
+				<span style="color:black">earthy</span>, 
+				<span style="color:black">local</span>, 
+				<span style="color:black">real</span>. These things cannot connect you with your
+				space.  We can help you make your living arrangements <span style="color:black">much better.</span>
+				</p>
+				<p>
+				<span style="color:black">More photos</span> are available from us and others on our 
+				<span style="color:black">social media</span> channels.  Be sure to check them out, and 
+				<span style="color:black">subscribe</span> to stay up-to-date with the 
+				<span style="color:black">latest design ideas</span>.  
+				<!--
+				You may also enjoy the musings of our founder on the blog
+				<a href="http://www.unspoiledbyexperience.com" style="color:black">unspoiledbyexperience.com</a>.
+				-->
+				</p>
+			</div>
+		</div>
+		
+		<!-- How to buy -->
+		<div class="jackbox-html" id="how-to-order">
+			<div class="text-div">
+				<p>
+				<span style="color:black">We want</span> what we make for you to be something you 
+				<span style="color:black">cherish</span>.  Something that 
+				fits your <span style="color:black">aesthetic</span> as well as <span style="color:black">functional</span> 
+				needs.  
+				</p>
+				<p>
+				<span style="color:black">As you may have noticed,</span> Ozark Oak and Steel isn't a store, it is merely a 
+				historical collection of pieces and a notional indication of what the cost is to produce.  Each piece is 
+				<span style="color:black">custom,</span> each piece is <span style="color:black">unique,</span> each piece
+				is <span style="color:black">taylored</span> to the environmental context where it will be used.
+				</p>
+				<p>
+				In order to achieve success <span style="color:black">we need to converse about it.</span>  We need to get into 
+				your head and pull out what elements of <span style="color:black">style</span> the environment for the product 
+				exhibits so that we can effectively <span style="color:black">collaborate</span> on something that looks 
+				fantastic within the context of the space.  
+				</p>
+				<p>
+				<span style="color:black">In a nutshell</span> it goes like this: You call, we talk, we quote, you pay, we create, we ship. 
+				You see, we are doing most of the work for you.  Our products tend to have a production 
+				<span style="color:black">backlog</span> since they are quite <span style="color:black">work intensive</span> and 
+				made with <span style="color:black">great care</span>; we will advise you on the expected completion when you call.
+				</p>
+				<p>
+				Now for the tough stuff.  While we take <span style="color:black">great pride</span> in everything that we 
+				make and <span style="color:black">bend over backwards</span> to make any customer <span style="color:black">happy</span>, 
+				since all products are custom, all sales are final. Ozark Oak and Steel will not be held liable for any damages, 
+				direct or indirect, from any product sold for any reason.  Thank you for understanding.
+				</p>
+				<p>
+				If you are still with us, what are you waiting for?  
+				<a style="color:black" href="tel: (800) 296-7138">Call now to order: (800) 296-7138</a> 
+				</p>
+			</div>
+		</div>
+		
+		<!-- Application JS --> 
+		<%= javascript_include_tag "application" %>
+		
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-54328417-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+		
+	</body>
+	
+</html>

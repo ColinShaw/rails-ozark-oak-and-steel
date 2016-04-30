@@ -1,0 +1,55 @@
+<!-- Products -->
+<section id="products">
+	
+	<!-- Menu -->
+	<div class="row">
+		<nav id="filters" class="portfolio-filter">
+  			<ul>
+    			<li class="active"><a href="javascript:;" data-filter-value="*">All</a></li>
+    			<% @categories.each do |category| %>
+    				<li><a href="javascript:;" data-filter-value=".<%= category.class_name %>"><%= category.formatted_name %></a></li>
+    			<% end %>
+		   </ul>
+ 		</nav>
+	</div>
+ 
+ 	<!-- Items -->	
+	<div class="row">
+		<div class="large-12 columns">
+  			<div id="isotope" class="portfolio-container"> 
+  				
+  				<% @products.each do |product| %>
+  					<!-- Item -->
+  					<a href="/products/<%= product.slug %>/">
+			        	<div class="portfolio-item<% product.categories.each do |c| %><%= " "+c.class_name %><% end %>">
+			          		<div class="portfolio-img">
+			          			<% if product.has_image_model? %>
+			          				<% if product.has_main_image? %>
+			          					<% if product.has_attached_image? %>
+				          					<img src="<%= product.main_image_url %>" alt="<%= product.main_image_alt_tag %>">
+				          				<% else %>
+				          					<!-- No image - carrierwave error -->
+				          					<%= image_tag('nophoto.jpg') %>
+				          				<% end %>
+			          				<% else %>
+			          					<!-- No image - main_image not set -->
+				          				<%= image_tag('nophoto.jpg') %>
+			          				<% end %>
+			          			<% else %>
+			          				<!-- No image - image model does not exist -->
+			          				<%= image_tag('nophoto.jpg') %>
+			          			<% end %>
+			          		</div>
+			          		<div class="project-info">
+			            		<h2><%= product.formatted_name %></h2>
+			            		<p></p>
+			            	</div>
+			        	</div>  
+		        	</a>
+		        	
+		        <% end %>
+  								
+		  	</div>
+		</div>
+	</div>
+</section>

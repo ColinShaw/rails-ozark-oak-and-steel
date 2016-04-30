@@ -1,0 +1,66 @@
+<!-- About product -->
+<section id="about-product">
+	
+	<!-- Title -->
+	<div class="row">
+		<h1 class="title-section bold"><%= @product.formatted_name %><span class="border"></span></h1>
+	</div>
+	<div class="row">
+		<h4>
+			<div class="product-description">
+				<div class="description-wrapper">
+					<%= @product.formatted_description %>
+				</div>
+				<div class="main-price">
+					...starting at <%= @product.formatted_price %>
+				</div>
+			</div>
+		</h4>
+	</div>
+ 
+ 	<!-- Images -->	
+	<div class="row">
+		<div class="large-12 columns">
+  			<div id="isotope" class=" portfolio-container"> 
+  			
+				<!-- Iterated Image -->
+				<% if @product.has_image_model? %>
+					<% @product.ordered_images.each do |image| %>
+						<% if image.has_attached_image? %>
+		  					
+		  					<!-- Image -->
+		  					<div class="portfolio-item">
+					        	<a href="<%= image.image_url %>" class="jackbox" data-group="images">
+					        		<div class="portfolio-img">
+					            		<img src="<%= image.image_url %>" alt="<%= image.alt_tag %>" />
+					          		</div>
+					          	</a>
+					          	<!-- 
+					        	<div class="project-info">
+					            	<p><a href="http://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img class="pinterest-image" src="http://assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></p>
+					            </div>
+					           -->
+					        </div>
+						<% else %>
+							<div class="portfolio-item">
+								<div class="portfolio-img">
+				        			<!-- No image - carrierwave error -->
+									<%= image_tag('nophoto.jpg') %>
+				          		</div>
+							</div>
+		  				<% end %>
+		  			<% end %>
+	    		<% else %>
+	    			<div class="portfolio-item">
+		        		<div class="portfolio-img">
+		        			<!-- No image - image model does not exist -->
+							<%= image_tag('nophoto.jpg') %>
+		          		</div>
+			        </div>
+			        
+	  			<% end %>
+	  			
+	      	</div>
+		</div>
+	</div>
+</section>
