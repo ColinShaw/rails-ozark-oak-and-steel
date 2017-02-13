@@ -1,6 +1,6 @@
 # Ozark Oak and Steel
 
-This is the Ozark Oak and Steel site.  It was a site used for promoting and selling 
+This is the [Ozark Oak and Steel](http://www.ozarkoakandsteel) site.  It was a site used for promoting and selling 
 furniture when I made furniture.  All graphic content copyright Colin Shaw. 
 Do not use it without permission.
 
